@@ -14,7 +14,7 @@ import NavBar from "@/components/NavBar";
 export default function Home() {
 
   return (
-    <div className="scroll-smooth w-full overflow-auto">
+    <div className="scroll-smooth max-w-screen ">
       <NavBar />
       <FormProvider>
         <HeroSection />

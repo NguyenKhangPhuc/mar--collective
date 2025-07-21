@@ -8,7 +8,7 @@ const Story = () => {
     const { setIsOpen } = useFormContext()
     return (
         <div className="w-full py-20 h-auto" id="ourstory">
-            <div className="max-w-7xl flex lg:flex-row flex-col mx-auto px-4 gap-4">
+            <div className="max-w-7xl flex items-center justify-center lg:flex-row flex-col mx-auto px-4 gap-4">
                 <div className="w-full flex flex-col gap-7">
 
                     <div className="font-bold lg:text-6xl text-4xl">Our Story</div>
@@ -43,16 +43,17 @@ const Story = () => {
 
                 </div>
 
-                <div className="w-full h-[750px] flex justify-center items-center relative">
-                    <div className="w-full h-2/3 flex flex-col justify-center items-center rounded-xl bg-gradient-to-br from-blue-500 to-yellow-500 text-white shadow-xl/30">
+                <div className="w-full h-full flex justify-center items-center">
+                    <div className="w-full sm:h-[500px] h-[400px] flex flex-col justify-center items-center rounded-xl bg-gradient-to-br from-blue-500 to-yellow-500 text-white shadow-xl/30 relative ">
                         <CameraAltIcon sx={{ fontSize: 100 }} />
                         <div className="text-white font-bold">Founder Story Photo</div>
                         <div className="text-white">Surfing + Culinary Expertises</div>
+                        <div className="flex flex-col justify-center items-center absolute top-full -translate-y-1/2  right-0 2xl:translate-x-1/2 text-yellow-500 bg-white rounded-full lg:w-35 lg:h-35 w-30 h-30 z-1 text-2xl shadow-xl/30">
+                            <div className="font-bold lg:text-xl text-lg">15+</div>
+                            <div className="lg:text-xl text-lg">Years</div>
+                        </div>
                     </div>
-                    <div className="flex flex-col justify-center items-center absolute bottom-10 -right-10 text-yellow-500 bg-white rounded-full w-40 h-40 z-1 text-2xl shadow-xl/30">
-                        <div className="font-bold">15+</div>
-                        <div >Years</div>
-                    </div>
+
                 </div>
             </div>
         </div>
