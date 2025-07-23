@@ -37,7 +37,7 @@ const Story = () => {
                             className="sm:w-1/2 lg:w-1/3 w-full  flex items-center gap-3 p-5 justify-center border-2 border-yellow-500 text-yellow-500 text-xl shadow-sm rounded-lg font-bold shadow-xl hover:opacity-60 duration-300 cursor-pointer"
                         >
                             <ExploreIcon />
-                            <div>Get in touch</div>
+                            <a href="#contact">Get in touch</a>
                         </button>
                     </div>
 

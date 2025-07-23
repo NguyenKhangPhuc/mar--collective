@@ -20,7 +20,7 @@ const HeroSection = () => {
                     className="flex items-center gap-3 p-5 px-10  border-2 border-white text-white sm:text-2xl text-xl shadow-sm rounded-lg font-bold shadow-xl hover:opacity-60 duration-300 cursor-pointer"
                 >
                     <ExploreIcon />
-                    <div>Explore Experiences</div>
+                    <a href='#experience'>Explore Experiences</a>
                 </button>
             </div>
         </div>
