@@ -6,7 +6,7 @@ const Footer = () => {
                 <div className="w-full grid lg:grid-cols-4 grid-rows-1 gap-5 py-10 border-b border-gray-800">
                     <div className="w-full flex flex-col lg:items-start items-center gap-4">
                         <div className="text-white text-3xl">Maré Collective</div>
-                        <div className="text-gray-500 text-xl text-center">Authentic Portuguese experiences where ocean meets table.</div>
+                        <div className="text-gray-500 text-xl ">Authentic Portuguese experiences where ocean meets table.</div>
                         <div className="text-gray-400">RNAVT: XXXXX</div>
                     </div>
                     <div className="w-full flex flex-col lg:items-start items-center gap-2">

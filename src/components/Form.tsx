@@ -50,7 +50,7 @@ const Form = () => {
     }
     return (
         <div className="bg-black/30 w-screen h-screen fixed flex items-center justify-center top-0  z-100" >
-            <form className="md:p-10 p-5 min-w-3/7 min-h-auto bg-white flex flex-col md:gap-5 gap-2 rounded-lg " onSubmit={handleSubmit(onSubmit)}>
+            <form className="md:p-10 p-5 min-w-3/7 min-h-auto max-h-full bg-white flex flex-col md:gap-5 gap-2 rounded-lg  overflow-y-auto" onSubmit={handleSubmit(onSubmit)}>
 
                 <div className="md:text-3xl text-xl font-bold">Book Your Experience</div>
 
@@ -92,7 +92,7 @@ const Form = () => {
                     <label className="flex flex-col w-1/2 text-gray-600 md:text-lg text-sm gap-2">
                         Experiences
                         <select
-                            className="p-5 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
+                            className="px-4 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
                             {...register("experience", { required: "Please select experience field" })}
                         >
                             {constants.experienceSelection.map((element, index) => {
@@ -106,7 +106,7 @@ const Form = () => {
                     <label className="flex flex-col w-1/2 text-gray-600 md:text-lg text-sm gap-2">
                         Group Size
                         <select
-                            className="p-5 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
+                            className="px-4 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
                             {...register("groupSize", { required: "Please select the group size" })}
                         >
                             {constants.groupSizeSelection.map((element, index) => {
@@ -123,7 +123,7 @@ const Form = () => {
                     <label className="flex flex-col w-1/2 text-gray-600 md:text-lg text-sm gap-2">
                         Preferred Start Date
                         <input
-                            className="p-5 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double" type="date"
+                            className="px-4 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double" type="date"
                             {...register("startDate", { required: "Please choose the start date" })}
                         />
                         {errors.startDate && <div className="error_message">{errors.startDate.message}</div>}
@@ -131,7 +131,7 @@ const Form = () => {
                     <label className="flex flex-col w-1/2 text-gray-600 md:text-lg text-sm gap-2">
                         Duration
                         <select
-                            className="p-5 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
+                            className="px-4 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
                             {...register("duration", { required: "Please choose your duration" })}
                         >
                             {constants.durationSelection.map((element, index) => {
@@ -154,7 +154,7 @@ const Form = () => {
                     {errors.specialRequests && <div className="error_message">{errors.specialRequests.message}</div>}
                 </label>
 
-                <div className="w-full flex md:flex-row flex-col gap-3 ">
+                <div className="w-full flex md:flex-row flex-col md:gap-3 gap-1 ">
                     <button type="submit" className="md:w-1/2 p-3 w-full flex items-center justify-center text-center gap-3 bg-gradient-to-r from-blue-700 to-blue-400 text-white rounded-lg md:text-lg text-base font-bold shadow-xl hover:opacity-60 duration-300 cursor-pointer">
                         <AssignmentTurnedInIcon />
                         <div>Submit Booking Request</div>
