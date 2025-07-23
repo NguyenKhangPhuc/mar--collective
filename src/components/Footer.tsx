@@ -5,7 +5,7 @@ const Footer = () => {
             <div className="flex flex-col max-w-7xl mx-auto">
                 <div className="w-full grid lg:grid-cols-4 grid-rows-1 gap-5 py-10 border-b border-gray-800">
                     <div className="w-full flex flex-col lg:items-start items-center gap-4">
-                        <div className="text-white text-3xl">Maré Collective</div>
+                        <div className="text-white text-3xl">Viagem Perfecta</div>
                         <div className="text-gray-500 text-xl ">Authentic Portuguese experiences where ocean meets table.</div>
                         <div className="text-gray-400">RNAVT: XXXXX</div>
                     </div>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="w-full flex justify-center text-gray-500 text-lg pt-10">
-                    © 2024 Maré Collective. All rights reserved.
+                    © 2024 Viagem Perfecta. All rights reserved.
                 </div>
             </div>
         </div>

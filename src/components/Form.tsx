@@ -88,7 +88,7 @@ const Form = () => {
                     {errors.email && <div className="error_message">{errors.email.message}</div>}
                 </label>
 
-                <div className="flex gap-3">
+                <div className="w-full flex gap-3">
                     <label className="flex flex-col w-1/2 text-gray-600 md:text-lg text-sm gap-2">
                         Experiences
                         <select
@@ -119,19 +119,20 @@ const Form = () => {
                     </label>
                 </div>
 
-                <div className="flex gap-3">
+                <div className="w-full flex gap-3">
                     <label className="flex flex-col w-1/2 text-gray-600 md:text-lg text-sm gap-2">
                         Preferred Start Date
                         <input
                             className="px-4 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double" type="date"
                             {...register("startDate", { required: "Please choose the start date" })}
+                            placeholder="dd/mm/yyyy"
                         />
                         {errors.startDate && <div className="error_message">{errors.startDate.message}</div>}
                     </label>
                     <label className="flex flex-col w-1/2 text-gray-600 md:text-lg text-sm gap-2">
                         Duration
                         <select
-                            className="px-4 w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
+                            className=" w-full md:h-[50px] h-[35px] border border-gray-400  rounded-lg hover:outline-double"
                             {...register("duration", { required: "Please choose your duration" })}
                         >
                             {constants.durationSelection.map((element, index) => {
